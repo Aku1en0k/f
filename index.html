@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пилоты Формулы-1 по сезонам</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="head">
+  <div class="wrap">
+    <nav class="nav" aria-label="Разделы"><a href="index.html" aria-current="page">Пилоты</a><a href="seasons.html">Сезоны</a><a href="about.html">О нас</a><a href="contacts.html">Обратная связь</a></nav>
+    <h1>Пилоты Формулы-1 по сезонам</h1>
+    <label>Сезон <select id="yr"></select></label>
+    <p id="note" class="src" role="status"></p>
+  </div>
+</header>
+<div class="wrap page">
+  <p class="hint">Пилоты в порядке итогового места в чемпионате. Нажмите на фото, чтобы узнать подробнее.</p>
+  <div id="cards" class="cards"></div>
+</div>
+<footer class="foot"><div class="wrap">Учебный проект, ВГУ ФКН, группа 15. Автор: Демин К. Д.</div></footer>
+<dialog id="dlg" aria-labelledby="dName">
+  <button type="button" id="dClose" class="x" aria-label="Закрыть">×</button>
+  <div class="dhead"><img id="dImg" alt="" width="96" height="96"><div><h3 id="dName"></h3><p id="dTeam" class="hint"></p></div></div>
+  <div id="stat" class="stat"></div>
+  <p id="bio" class="hint"></p>
+</dialog>
+<script src="app.js"></script>
+</body>
+</html>
